@@ -9,6 +9,7 @@ Test Setup            Run Keywords
 ...                    AND Login with Valid Credentials
 
 
+
 *** Variables ***
 ${VALID_EMAIL}               support@ngendigital.com
 ${VALID_PASSWORD}            abc123
@@ -28,9 +29,7 @@ User should be able to book flight
     # Step 6: Choose Destination On Book Page
     # Step 7: Choose Class On Book Page
     # Step 8: Choose Start Date On Book Page
-    Choose Start Date On Book Page
     # Step 9: Choose End Date On Book Page
-    Choose End Date On Book Page
     # Step 10: Choose Service On Book Page
     Choose Service On Book Page
     # Step 11: Click Check Box Day On Book Page
@@ -42,6 +41,6 @@ User should be able to book flight
     # Step 14: Click Price On Price Page
     Click Price On Price Page
     # Step 15: Click Confirm Button On Price Page
-    Confirm Button On Price Page
+    Click Confirm Button On Price Page
     # Step 16: Verify Reservation Page Appears
     Verify Reservation Page Appears
