@@ -1,0 +1,4 @@
+price_logo: '//android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView5"]'
+price_example: '//android.widget.Button[@resource-id="com.example.myapplication:id/price1"]'
+confirm_button_pricePage: '//android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]'
+reservation_booked: '//android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]'
