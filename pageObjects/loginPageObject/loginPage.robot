@@ -1,5 +1,6 @@
 *** Settings ***
 Resource            ../base/base.robot
+Resource                ../homePageObject/homePage.robot
 Variables           loginPage_locators.yaml
 
 *** Keywords ***
@@ -18,4 +19,13 @@ Input Password On Login Page
 
 Click Sign In Button On Login Page
     Click Element        ${signIn_button_login}
+
+Login With Valid Credentials
+    [Arguments]    ${email}=${VALID_EMAIL}    ${password}=${VALID_PASSWORD}
+    Verify Home Page Appears
+    Click Sign In Button On Home Page
+    Verify Login Page Appears
+    Input Username On Login Page     ${email}
+    Input Password On Login Page  ${password}
+    Click Sign In Button On Login Page
     
