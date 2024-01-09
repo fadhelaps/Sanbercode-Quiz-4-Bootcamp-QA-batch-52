@@ -4,6 +4,7 @@ Resource            ../pageObjects/loginPageObject/loginPage.robot
 Test Setup            Run Keywords
 ...                    Open Flight Application
 ...                    AND Login with Valid Credentials
+Test Teardown    Close Flight Application
 
 
 
